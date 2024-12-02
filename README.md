@@ -25,7 +25,7 @@ GithubID: shijiale0609
 ## How to cite
 
 ```
-@article{shi2024macrosimgg,
+@article{shi2024macrosimgnn,
 author = {Jiale Shi, Dylan J. Walsh, Runzhong Wang, Nathan J. Rebello, Bradley D. Olsen, Debra J. Audus},
 title = {MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network},
 journal = {ChemRxiv},
