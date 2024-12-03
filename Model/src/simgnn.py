@@ -160,7 +160,8 @@ class SimGNNTrainer(object):
         self.global_labels = {val:index  for index, val in enumerate(self.global_labels)}
         self.number_of_labels = 128#len(self.global_labels)
         #with open('/afs/crc.nd.edu/user/j/jshi1/scratch365/SimGNN_update/monomers_dict_full.json','r') as json_file:
-        with open('/afs/crc.nd.edu/user/j/jshi1/scratch365/SimGNN_update_valid/monomers_dict_full.json','r') as json_file:
+        # change path to be the absolute path of monomers_dict_full.json
+        with open('path/monomers_dict_full.json','r') as json_file:
             monomers_fp_dict = json.load(json_file)
         self.monomers_fp_dict = monomers_fp_dict
 
