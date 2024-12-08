@@ -1,6 +1,6 @@
-# MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network
+# MacroSimGNN
 
-This repository supports the following manuscript.
+This repository supports the following manuscript. 
 
 Jiale Shi, Dylan J. Walsh, Runzhong Wang, Nathan J. Rebello, Bradley D. Olsen, Debra J. Audus. "MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network," ChemRxiv, 2024.
 
@@ -10,9 +10,9 @@ MacroSimGNN is a graph neural network model designed for efficient and accurate 
 Key features include:
 - **Pairwise Graph Similarity:** Accurately computes macromolecule similarity for cheminformatics applications.
 - **Land Mark Distance Embeddings:** Generates embeddings based on macromolecular similarities to a set of landmark molecules, enhancing both unsupervised and supervised learning tasks.
-- **Versatility:** Facilitates the development of advanced database search engines and predictive tools for macromolecular design.
+- **Importance and Versatility:** Facilitates the development of advanced database search engines and predictive tools for macromolecular design.
 
-This repository provides tools and models for researchers and developers aiming to advance macromolecular cheminformatics with cutting-edge machine learning methods.
+This repository provides all the datasets and scripts to reproduce all the results in the MacroSimGNN manuscript.
 
 
 ## Contact
@@ -27,7 +27,7 @@ Massachusetts Institute of Technology (MIT)
 
 Email: jialeshi@mit.edu  
 
-GithubID: shijiale0609  
+GithubID: [shijiale0609](https://github.com/shijiale0609)  
 
 
 ## Please cite our work and star this repo if it helps your research
