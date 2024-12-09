@@ -2,7 +2,7 @@
 ```
 TRAIN_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/train/
 VAL_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/test/
-SAVE_PATH=modelhistogram_new2
+SAVE_PATH=~/MacroSimGNN/Results/output_full_size/modelhistogram_new2
 
 python ~/MacroSimGNN/Model/src/main.py \
     --epochs 1000 \
@@ -17,7 +17,7 @@ python ~/MacroSimGNN/Model/src/main.py \
 ##Testing Command 
 ```
 TEST_DATA=~/MacroSimGNN/Dataset/test2_data_set/test/
-MODEL_PATH=model_min_loss
+MODEL_PATH=~/MacroSimGNN/Results/output_full_size/model_min_loss
 
 python ~/MacroSimGNN/Model/src/main.py \
     --batch-size 256 \
