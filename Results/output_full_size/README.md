@@ -1,10 +1,10 @@
 
 Train Model
 ```
-python ../src/main.py --epochs 1000 --batch-size 256 --histogram  --save-path modelhistogram_new2 --training-graphs path_to_train_dataset  --testing-graphs path_to_validation_dataset
+python ~/MacroSimGNN/Model/src/main.py --epochs 1000 --batch-size 256 --histogram  --save-path modelhistogram_new2 --training-graphs ~/MacroSimGNN/Dataset/train_validation_data_set/train/  --testing-graphs ~/MacroSimGNN/Dataset/train_validation_data_set/test/
 ```
 
 Test 
 ```
-python path_to simgnn main.py /src/main.py --batch-size 256 --histogram --load-path path_to_save_minimum_loss_model  --testing-graphs path_to_test_dataset 
+python  ~/MacroSimGNN/Model/src/main.py --batch-size 256 --histogram --load-path path_to_save_minimum_loss_model  --testing-graphs ~/MacroSimGNN/Dataset/test2_data_set/test/
 ```
