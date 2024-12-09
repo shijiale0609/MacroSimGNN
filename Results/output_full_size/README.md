@@ -1,10 +1,28 @@
+##Training Command
+```
+TRAIN_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/train/
+VAL_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/test/
+SAVE_PATH=modelhistogram_new2
 
-Train Model
-```
-python ~/MacroSimGNN/Model/src/main.py --epochs 1000 --batch-size 256 --histogram  --save-path modelhistogram_new2 --training-graphs ~/MacroSimGNN/Dataset/train_validation_data_set/train/  --testing-graphs ~/MacroSimGNN/Dataset/train_validation_data_set/test/
+python ~/MacroSimGNN/Model/src/main.py \
+    --epochs 1000 \
+    --batch-size 256 \
+    --histogram \
+    --save-path $SAVE_PATH \
+    --training-graphs $TRAIN_DATA \
+    --testing-graphs $VAL_DATA
+
 ```
 
-Test 
+##Testing Command 
 ```
-python  ~/MacroSimGNN/Model/src/main.py --batch-size 256 --histogram --load-path path_to_save_minimum_loss_model  --testing-graphs ~/MacroSimGNN/Dataset/test2_data_set/test/
+TEST_DATA=~/MacroSimGNN/Dataset/test2_data_set/test/
+MODEL_PATH=model_min_loss
+
+python ~/MacroSimGNN/Model/src/main.py \
+    --batch-size 256 \
+    --histogram \
+    --load-path $MODEL_PATH \
+    --testing-graphs $TEST_DATA
+
 ```
