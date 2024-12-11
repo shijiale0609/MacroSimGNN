@@ -27,7 +27,7 @@ python ~/MacroSimGNN/Model/src/main.py \
 
 ```
 
-## postprocess data in csv format
+## postprocess data
    [testing1_merged.pkl](./testing1_merged.pkl),
    [testing2_merged.pkl](./testing2_merged.pkl)
 
