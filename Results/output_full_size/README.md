@@ -1,4 +1,4 @@
-##Training Command
+## Training Command
 ```
 TRAIN_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/train/
 VAL_DATA=~/MacroSimGNN/Dataset/train_validation_data_set/test/
@@ -14,7 +14,7 @@ python ~/MacroSimGNN/Model/src/main.py \
 
 ```
 
-##Testing Command 
+## Testing Command 
 ```
 TEST_DATA=~/MacroSimGNN/Dataset/test2_data_set/test/
 MODEL_PATH=~/MacroSimGNN/Results/output_full_size/model_min_loss
@@ -26,3 +26,9 @@ python ~/MacroSimGNN/Model/src/main.py \
     --testing-graphs $TEST_DATA
 
 ```
+
+## postprocess data in csv format
+   [testing1_merged.pkl](./testing1_merged.pkl),
+   [testing2_merged.pkl](./testing2_merged.pkl)
+
+## visualization notebook [Model_Performance.ipynb](./Model_Performance.ipynb)
