@@ -31,4 +31,5 @@ python ~/MacroSimGNN/Model/src/main.py \
    [testing1_merged.pkl](./testing1_merged.pkl),
    [testing2_merged.pkl](./testing2_merged.pkl)
 
-## visualization notebook [Model_Performance.ipynb](./Model_Performance.ipynb)
+## visualization notebook 
+   [Model_Performance.ipynb](./Model_Performance.ipynb)
