@@ -1,0 +1,3 @@
+Molecule,SMILES
+alpha_bond,CC(OC)CC
+beta_bond,CC(OC)CC
