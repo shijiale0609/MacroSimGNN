@@ -11,7 +11,7 @@ line 164 in [./src/simgnn.py](./src/simgnn.py)
 ```
 change path to be the absolute path of monomers_dict_full.json
 
-## 1.2 Add validation steps to save the model which has the minimum loss.
+## 1.2 Add validation steps to save the model that has the minimum loss on the validation dataset.
 
 in [./src/simgnn.py](./src/simgnn.py)
 ```
