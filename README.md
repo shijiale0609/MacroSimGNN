@@ -61,3 +61,7 @@ journal = {ChemRxiv},
 year = {2024},
 }
 ```
+
+**License**
+
+- [GNU](https://github.com/shijiale0609/MacroSimGNN/blob/master/LICENSE)
