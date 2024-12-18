@@ -20,11 +20,12 @@ The [Dataset](./Dataset/) folder contains all the necessary graph data and graph
 
 The [GED_Dataset_Visualization.ipynb](./Dataset/GED_Dataset_Visualization.ipynb) notebook visualizes the graph data (number of nodes and number of edges) and the graph edit distance dataset, as referenced in Figure 3 of the main text.
 
-The [Graph_Pairwise_Similarity_Calculation.ipynb](./Dataset/Graph_Similarity_Calculation/Graph_Pairwise_Similarity_Calculation.ipynb) notebook explains how to calculate the graph edit distance between two graph representations of macromolecules using the A* method, as well as how to compute graph similarity using graph kernel methods. We refer and modify the code from [GLAMOUR](https://github.com/learningmatter-mit/GLAMOUR).
+The [Graph_Pairwise_Similarity_Calculation.ipynb](./Dataset/Graph_Similarity_Calculation/Graph_Pairwise_Similarity_Calculation.ipynb) notebook explains how to calculate the graph edit distance between two graph representations of macromolecules using the A* method, as well as how to compute graph similarity using graph kernel methods. We refer to and modify the source code from [GLAMOUR](https://github.com/learningmatter-mit/GLAMOUR). The detailed modification is described in [./Dataset/Graph_Similarity_Calculation/README.md](./Dataset/Graph_Similarity_Calculation/README.md)
+
 
 ## Model
 
-The [Model](./Model/) folder contains the source code to run the MacroSimGNN model.
+The [Model](./Model/) folder contains the source code to run the MacroSimGNN model. To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) to process macromolecule coarse-grained graph representations. The detailed modifications are described in [Model/README.md](./Model/README.md)
 
 ## Results
 
@@ -61,3 +62,7 @@ journal = {ChemRxiv},
 year = {2024},
 }
 ```
+
+**License**
+
+- [GNU](https://github.com/shijiale0609/MacroSimGNN/blob/master/LICENSE)
