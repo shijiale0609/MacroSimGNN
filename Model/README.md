@@ -1,17 +1,17 @@
 # 1. MacroSimGNN Modification from SimGNN
 To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) to process macromolecule coarse-grained graph representations. The detailed modifications are described below.
 
-## 1.1 Change from one-hot encoding to Morgan Fingerprint encoding.
+## 1.1 Change from one-hot encoding to Morgan Fingerprint encoding
 [monomers_dict_full.json](./monomers_dict_full.json) contains the fingerprint for each monomer symbol.
 
-load the Morgan fingerprint by setting path of monomers_dict_full.json
+Load the Morgan fingerprint by setting path of monomers_dict_full.json
 line 164 in [./src/simgnn.py](./src/simgnn.py)
 ```
         with open('path/monomers_dict_full.json','r') as json_file:
 ```
-change path to be the absolute path of monomers_dict_full.json
+Change path to be the absolute path of monomers_dict_full.json
 
-## 1.2 Add validation steps to save the model that has the minimum loss on the validation dataset.
+## 1.2 Add validation steps to save the model that has the minimum loss on the validation dataset
 
 in [./src/simgnn.py](./src/simgnn.py)
 ```
