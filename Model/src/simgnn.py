@@ -309,7 +309,6 @@ class SimGNNTrainer(object):
 
             if  test_loss_epochs[-1] == min(test_loss_epochs):
                     self.save_model_state(model_state = "model_min_loss")
-                    
 
         np.save("train_loss_sum_epochs.npy" ,np.array(train_loss_epochs))
         np.save("test_loss_sum_epochs.npy" ,np.array(test_loss_epochs))
