@@ -8,4 +8,3 @@ The [Graph_Pairwise_Similarity_Calculation.ipynb](./Graph_Pairwise_Similarity_Ca
 2. The graph edit distance removes the edge substitution cost in [utils/macro_unsupervised.py](./utils/macro_unsupervised.py).
 
 In this MacroSimGNN work, the edges are the connections between nodes and do not have chemical features. Also, in order to make use of the [GLAMOUR](https://github.com/learningmatter-mit/GLAMOUR) code (which sets up edge details when loading graphs) and maintain compatibility, we still keep the graph data format from [GLAMOUR](https://github.com/learningmatter-mit/GLAMOUR), but the modified graph edit distance in this work does not consider the edge details.
-   
