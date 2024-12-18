@@ -5,12 +5,11 @@ This repository supports the following manuscript.
 Jiale Shi, Dylan J. Walsh, Runzhong Wang, Nathan J. Rebello, Bradley D. Olsen, Debra J. Audus. "MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network," ChemRxiv, 2024.
 
 
-MacroSimGNN is a graph neural network model designed for efficient and accurate calculation of macromolecule pairwise similarity. Traditional methods like graph edit distance are precise but computationally intensive, while graph kernel methods are faster but less accurate. MacroSimGNN strikes a balance by delivering high accuracy with significantly improved computational efficiency.
+Efficient and accurate calculation of macromolecule pairwise similarity is essential for developing database search engines and is useful for machine learning based predictive tools. Existing methods for calculating macromolecular similarity suffer from significant drawbacks. Graph edit distance is accurate but computationally expensive, and graph kernel methods are computationally efficient but inaccurate. This study introduces a graph neural network model, MacroSimGNN, which significantly improves computational efficiency while maintaining high accuracy on macromolecule pairwise similarity. Furthermore, this approach enables feature embeddings based on macromolecular similarities to a set of landmark molecules, enhancing both unsupervised and supervised learning tasks. This method represents a significant advancement in macromolecular cheminformatics, paving the way for the development of advanced search engines and data-driven design of macromolecules.
 
 Key features include:
-- **Pairwise Graph Similarity:** Accurately computes macromolecule similarity for cheminformatics applications.
-- **Land Mark Distance Embeddings:** Generates embeddings based on macromolecular similarities to a set of landmark molecules, enhancing both unsupervised and supervised learning tasks.
-- **Importance and Versatility:** Facilitates the development of advanced database search engines and predictive tools for macromolecular design.
+- **Pairwise Graph Similarity
+- **LandMark Distance Embeddings
 
 This repository provides all the datasets and scripts to reproduce all the results in the MacroSimGNN manuscript.
  
@@ -31,9 +30,9 @@ The [Model](./Model/) folder contains the source code to run the MacroSimGNN mod
 
 The [Results](./Results/) folder includes the following:
 
-- **[performance](./Results/performance/):** Describes the performance of the MacroSimGNN model in predicting pairwise graph similarity.
-- **[performance_vs_size](./Results/performance_vs_size/):** Explains how the performance of the MacroSimGNN model changes with the size of the training dataset.
-- **[classification](./Results/classification/):** Details the landmark distance embedding method and how it is used to predict the immune class of macromolecules.
+- **[performance](./Results/performance/):** Describes the performance of the MacroSimGNN model in predicting pairwise graph similarity
+- **[performance_vs_size](./Results/performance_vs_size/):** Explains how the performance of the MacroSimGNN model changes with the size of the training dataset
+- **[classification](./Results/classification/):** Provides Details on the landmark distance embedding method and how it is used to predict the immunogenicity class of macromolecules.
 
 
 ## Contact
