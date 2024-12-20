@@ -24,7 +24,7 @@ The [Graph_Pairwise_Similarity_Calculation.ipynb](./Dataset/Graph_Similarity_Cal
 
 ## Model
 
-The [Model](./Model/) folder contains the source code to run the MacroSimGNN model. To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) (specifically, the version of [be3ee61 on Jan 12, 2023](https://github.com/benedekrozemberczki/SimGNN/tree/be3ee6193a7c286336260f6479a6aee8bdc56f8c) under [GNU license](https://github.com/benedekrozemberczki/SimGNN/blob/master/LICENSE)) to process macromolecule coarse-grained graph representations. The detailed modifications are described in [Model/README.md](./Model/README.md)
+The [Model](./Model/) folder contains the source code to run the MacroSimGNN model. To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) (specifically, the version of [be3ee61 on Jan 12, 2023](https://github.com/benedekrozemberczki/SimGNN/tree/be3ee6193a7c286336260f6479a6aee8bdc56f8c) under [GNU General Public License v3.0](https://github.com/benedekrozemberczki/SimGNN/blob/master/LICENSE)) to process macromolecule coarse-grained graph representations. The detailed modifications are described in [Model/README.md](./Model/README.md)
 
 ## Results
 
@@ -64,6 +64,6 @@ year = {2024},
 
 **License**
 
-- [GNU](https://github.com/shijiale0609/MacroSimGNN/blob/master/LICENSE)
+- [GNU General Public License v3.0](https://github.com/shijiale0609/MacroSimGNN/blob/master/LICENSE)
 
 
