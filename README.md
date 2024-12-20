@@ -55,7 +55,7 @@ GithubID: [shijiale0609](https://github.com/shijiale0609)
 
 ```
 @article{shi2024macrosimgnn,
-author = {Jiale Shi, Dylan J. Walsh, Runzhong Wang, Nathan J. Rebello, Bradley D. Olsen, Debra J. Audus},
+author = {Jiale Shi, Runzhong Wang, Nathan J. Rebello, Jiarui Lu, Bradley D. Olsen, Debra J. Audus},
 title = {MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network},
 journal = {ChemRxiv},
 year = {2024},
