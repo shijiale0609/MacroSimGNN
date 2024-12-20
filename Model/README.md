@@ -1,5 +1,5 @@
 # 1. MacroSimGNN Modification from SimGNN
-To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) (specifically, the version of [be3ee61 on Jan 12, 2023](https://github.com/benedekrozemberczki/SimGNN/tree/be3ee6193a7c286336260f6479a6aee8bdc56f8c) under [GNU license](https://github.com/benedekrozemberczki/SimGNN/blob/master/LICENSE)) to process macromolecule coarse-grained graph representations. The detailed modifications are described below.
+To develop MacroSimGNN, we refer to and modify the source code from [SimGNN](https://github.com/benedekrozemberczki/SimGNN) (specifically, the version of [be3ee61 on Jan 12, 2023](https://github.com/benedekrozemberczki/SimGNN/tree/be3ee6193a7c286336260f6479a6aee8bdc56f8c) under [GNU General Public License v3.0](https://github.com/benedekrozemberczki/SimGNN/blob/master/LICENSE)) to process macromolecule coarse-grained graph representations. The detailed modifications are described below.
 
 ## 1.1 Change from one-hot encoding to Morgan Fingerprint encoding
 [monomers_dict_full.json](./monomers_dict_full.json) contains the fingerprint for each monomer symbol.
