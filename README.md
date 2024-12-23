@@ -51,7 +51,7 @@ GithubID: [shijiale0609](https://github.com/shijiale0609)
 
 
 ## Please cite our work and star this repo if it helps your research
-Our work is submitted for peer review. Please cite our work on ChemRxiv.
+Our work is submitted for peer review. Pre-print on ChemRxiv.
 
 How to cite
 
