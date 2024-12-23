@@ -9,7 +9,7 @@ Efficient and accurate calculation of macromolecule pairwise similarity is essen
 
 Key features include:
 - **Pairwise Graph Similarity**
-- **LandMark Distance Embeddings**
+- **Landmark Distance Embeddings**
 
 This repository provides all the datasets and scripts to reproduce all the results in the MacroSimGNN manuscript.
  
@@ -51,7 +51,9 @@ GithubID: [shijiale0609](https://github.com/shijiale0609)
 
 
 ## Please cite our work and star this repo if it helps your research
-## How to cite
+Our work is submitted for peer review. Please cite our work on ChemRxiv.
+
+How to cite
 
 ```
 @article{shi2024macrosimgnn,
