@@ -51,7 +51,7 @@ GithubID: [shijiale0609](https://github.com/shijiale0609)
 
 
 ## Please cite our work and star this repo if it helps your research
-Our work is submitted for peer review. Pre-print on ChemRxiv.
+Our work is submitted for peer review. [Preprint on ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-8hs2k).
 
 How to cite
 
@@ -60,6 +60,8 @@ How to cite
 author = {Jiale Shi, Runzhong Wang, Nathan J. Rebello, Jiarui Lu, Bradley D. Olsen, Debra J. Audus},
 title = {MacroSimGNN: Efficient and Accurate Calculation of Macromolecule Pairwise Similarity via Graph Neural Network},
 journal = {ChemRxiv},
+doi={10.26434/chemrxiv-2024-8hs2k},
+url={https://doi.org/10.26434/chemrxiv-2024-8hs2k},
 year = {2024},
 }
 ```
