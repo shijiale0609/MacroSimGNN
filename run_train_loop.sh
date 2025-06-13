@@ -18,30 +18,42 @@ directories=(
 "1_42/" "1_53/" "1_64/" "1_75/" "1_86/"
 )
 
+
 # Loop through each directory
 for dir in "${directories[@]}"; do
-  # Navigate to the directory
-  mkdir $dir
+    # Remove trailing slash for cleaner job names
+    clean_dir=${dir%/}
+    
+    # Create the directory if it doesn't exist
+    mkdir -p $dir
+    
+    # Create the qsub script for this parameter combination
+    cat > "job_${clean_dir}.sh" << EOF
+#!/bin/bash
 
-  cd $dir
+# Change to the job directory
+cd $dir/
 
-  # Create postprocess directory and navigate into it
-  
+# Set up environment variables
+TRAIN_DATA=~/MacroSimGNN/Dataset/subDataset/train_validation_data_set_${clean_dir}/train/
+VAL_DATA=~/MacroSimGNN/Dataset/subDataset/train_validation_data_set_${clean_dir}/test/
+SAVE_PATH=./modelhistogram_new
 
-  #cat the following to be qscript and submit jobs to cluster
+# Run the training script
+python ~/MacroSimGNN/Model/src_onehot/main.py \\
+    --epochs 1000 \\
+    --batch-size 256 \\
+    --histogram \\
+    --save-path \$SAVE_PATH \\
+    --training-graphs \$TRAIN_DATA \\
+    --testing-graphs \$VAL_DATA
 
-    # Run the first Python script
-  TRAIN_DATA=~/MacroSimGNN/Dataset/subDataset/train_validation_data_set_${dir}/train/
-  VAL_DATA=~/MacroSimGNN/Dataset/subDataset/train_validation_data_set_${dir}/test/
-  SAVE_PATH=./modelhistogram_new # save the final step model
+echo "Job completed for ${clean_dir}"
+EOF
 
-  python ~/MacroSimGNN/Model/src_onehot/main.py \
-    --epochs 1000 \
-    --batch-size 256 \
-    --histogram \
-    --save-path $SAVE_PATH \
-    --training-graphs $TRAIN_DATA \
-    --testing-graphs $VAL_DATA
+    # Submit the job to the queue
+    echo "Submitting job for ${clean_dir}..."
+    qsub "job_${clean_dir}.sh"
 
   cd ..
 
