@@ -6,7 +6,7 @@ import os
 
 PATH = './'
 
-for random_number in [53, 64, 75, 86]:
+for random_number in [42, 53, 64, 75, 86]:
         file_name_title = "train_validation_data_set"
 
         file_name = PATH + file_name_title + ".json"
