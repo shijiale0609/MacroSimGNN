@@ -55,7 +55,7 @@ EOF
     echo "Submitting job for ${clean_dir}..."
     qsub "job_${clean_dir}.sh"
 
-  cd ..
+
 
 done
 
