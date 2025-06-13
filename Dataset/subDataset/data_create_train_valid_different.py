@@ -6,6 +6,8 @@ import os
 
 PATH = './'
 
+size = 1
+
 for random_number in [42, 53, 64, 75, 86]:
         file_name_title = "train_validation_data_set"
 
@@ -14,8 +16,8 @@ for random_number in [42, 53, 64, 75, 86]:
         with open(PATH + file_name,'r') as json_file:
             test_data_set_section1_sample = json.load(json_file)
             
-        path_train = PATH + file_name_title + "_" + str(random_number) + "/train/"
-        path_test =  PATH + file_name_title + "_" + str(random_number) + "/test/"
+        path_train = PATH + file_name_title + "_" +str(size) + "_" + str(random_number) + "/train/"
+        path_test =  PATH + file_name_title + "_" +str(size) + "_" + str(random_number) + "/test/"
             
         isExist = os.path.exists(path_train) and os.path.exists(path_test) 
         
